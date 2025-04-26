@@ -1,0 +1,94 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f7fa;
+}
+
+/* Crime and Judiciary Background */
+body {
+    background-image: url('assets/crime-judiciary-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px 30px;
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar .nav-links a:hover {
+    text-decoration: underline;
+}
+
+.dashboard-header, .problem-header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.dashboard-header h1, .problem-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.dashboard-header p, .problem-header p {
+    color: #ccc;
+}
+
+/* Problem Details */
+.report-section {
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.report-section input,
+.report-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background: #f2f2f2;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.report-section button {
+    padding: 12px;
+    background-color: #004aad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.report-section button:hover {
+    background-color: #003580;
+}
+
+/* Add further styling for the problem cards, dashboard, and other sections */

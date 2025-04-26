@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem Report | FIR Assistance Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="problem-page">
+
+    <nav class="navbar">
+        <div class="logo">FIR Assistance</div>
+        <ul class="nav-links">
+            <li><a href="dashboard.html">Back to Dashboard</a></li>
+            <li><a href="index.html" onclick="logout()">Logout</a></li>
+        </ul>
+    </nav>
+
+    <header class="problem-header">
+        <h1 id="problem-title">Problem Details</h1>
+        <p id="problem-description">Problem Description</p>
+    </header>
+
+    <section class="report-section">
+        <h2>File a Report</h2>
+        <form id="reportForm">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="text" id="fatherName" placeholder="Father's Name" required>
+            <input type="text" id="aadhar" placeholder="Aadhar Number" required>
+            <input type="text" id="phone" placeholder="Phone Number" required>
+            <input type="text" id="pan" placeholder="PAN Number" required>
+            <input type="text" id="address" placeholder="Address" required>
+            <textarea id="incidentDetails" placeholder="Describe the incident..." required></textarea>
+            <button type="submit">Submit Report</button>
+        </form>
+    </section>
+
+    <script src="problem.js"></script>
+</body>
+</html>
